@@ -1,0 +1,5 @@
+pm2 start manejador.js --name="ServerCluster" --watch -- -m=cluster -p=8081;
+pm2 start manejador.js --name="ServerFork1" --watch -- -m=fork -p=8082;
+pm2 start manejador.js --name="ServerFork2" --watch -- -m=fork -p=8083;
+pm2 start manejador.js --name="ServerFork3" --watch -- -m=fork -p=8084;
+pm2 start manejador.js --name="ServerFork4" --watch -- -m=fork -p=8085;
